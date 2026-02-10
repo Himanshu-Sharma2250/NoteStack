@@ -1,0 +1,266 @@
+{
+  "info": {
+    "_postman_id": "e66cdaea-464c-46b1-80b5-228e07f2dce2",
+    "name": "authentication - assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43357320",
+    "_collection_link": "https://go.postman.co/collection/43357320-e66cdaea-464c-46b1-80b5-228e07f2dce2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "authentication",
+      "item": [
+        {
+          "name": "register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"himanshu\",\r\n    \"email\": \"him542sharma@gmail.com\",\r\n    \"password\": \"himanshu\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"him542sharma@gmail.com\",\r\n    \"password\": \"himanshu\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "profile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"him542sharma@gmail.com\",\r\n    \"password\": \"himanshu\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"him542sharma@gmail.com\",\r\n    \"password\": \"himanshu\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/auth/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "note",
+      "item": [
+        {
+          "name": "create note",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"task 2\",\r\n    \"description\": \"Complete frontend\",\r\n    \"priority\": \"High\",\r\n    \"status\": \"Pending\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/note/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "note",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get note",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"task 1\",\r\n    \"description\": \"Complete backend\",\r\n    \"priority\": \"High\",\r\n    \"status\": \"Pending\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/note/698ae0e1a05f9080b2a1cae2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "note",
+                "698ae0e1a05f9080b2a1cae2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all notes",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"task 1\",\r\n    \"description\": \"Complete backend\",\r\n    \"priority\": \"High\",\r\n    \"status\": \"Pending\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/note",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "note"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "edit note",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"task 1\",\r\n    \"description\": \"Complete backend\",\r\n    \"priority\": \"Low\",\r\n    \"status\": \"Done\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/note/698ae0e1a05f9080b2a1cae2/edit",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "note",
+                "698ae0e1a05f9080b2a1cae2",
+                "edit"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete note",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
