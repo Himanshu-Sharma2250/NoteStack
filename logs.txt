@@ -1,0 +1,17 @@
+[2026-02-10 10:00:01] INFO: Starting NoteStack Backend Server...
+[2026-02-10 10:00:03] INFO: Connected to MongoDB Atlas (Cluster0)
+[2026-02-10 10:00:03] INFO: Server listening on PORT 5000
+
+[2026-02-10 10:05:22] POST /api/auth/register - 201 Created (User: testuser@example.com)
+[2026-02-10 10:05:45] POST /api/auth/login - 200 OK (JWT Set in HttpOnly Cookie)
+[2026-02-10 10:05:46] GET /api/auth/profile - 200 OK (User state synced with Zustand)
+
+[2026-02-10 10:06:10] GET /api/note - 200 OK (Fetched 4 notes for UserID: 65c8f...)
+[2026-02-10 10:07:15] POST /api/note/create - 201 Created (Title: "Project Roadmap")
+[2026-02-10 10:08:02] PATCH /api/note/65c9b.../edit - 200 OK (Priority updated to "High")
+
+[2026-02-10 10:10:12] WARN: Invalid login attempt - 401 Unauthorized (Email: wrong@email.com)
+[2026-02-10 10:12:45] ERROR: GET /api/note/99999 - 404 Not Found (Note ID does not exist)
+
+[2026-02-10 10:15:00] DELETE /api/note/65c9b... - 200 OK (Note successfully removed)
+[2026-02-10 10:16:30] POST /api/auth/logout - 200 OK (Cookie cleared)
