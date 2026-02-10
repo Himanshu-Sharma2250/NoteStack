@@ -33,3 +33,7 @@ A sleek, responsive note-taking application built with the **MERN stack** (Mongo
 * **Node.js & Express**
 * **MongoDB & Mongoose** (Database)
 * **JSON Web Token (JWT)** (Auth)
+
+---
+
+The Postman collection for testing API endpoints can be found in the /api folder.
